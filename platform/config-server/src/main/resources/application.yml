@@ -29,10 +29,10 @@ eureka:
     serviceUrl:
       defaultZone: http://192.168.0.213:32587/eureka/
 #      defaultZone: http://localhost:20000/eureka/
-#  instance:
-#    instance-id: ${eureka.instance.ip-address}:${server.port}
-#    ip-address: 192.168.0.213
-#    prefer-ip-address: true
+  instance:
+    instance-id: ${eureka.instance.ip-address}:31403
+    ip-address: 192.168.0.213
+    prefer-ip-address: true
 
 ## 开启所有actuator-endpoint
 management:
