@@ -6,8 +6,8 @@ spring:
     name: config-server
   ## rabbitMQ用于Bus推送
   rabbitmq:
-    host: localhost
-    port: 5672
+    host: 192.168.0.213
+    port: 30290
     username: guest
     password: guest
   cloud:
@@ -27,7 +27,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.0.213:30000/eureka/
+      defaultZone: http://service-6qkvsi.default.svc.cluster.local:30000/eureka/
 #      defaultZone: http://localhost:20000/eureka/
   instance:
     instance-id: ${eureka.instance.ip-address}:${server.port}
